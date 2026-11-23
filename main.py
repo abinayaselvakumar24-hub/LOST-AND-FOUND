@@ -230,6 +230,14 @@ def check_facts(raw_text: str, extracted: dict) -> dict:
 
     return clean
 
+def is_transport_error(exc: Exception) -> bool:
+    """Returns whether an exception represents an HTTP transport failure."""
+    try:
+        from httpx import TransportError
+    except ImportError:
+        return False
+    return isinstance(exc, TransportError)
+
 def extract_entities(text: str) -> dict:
     """Extracts entity attributes from report text."""
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
@@ -238,7 +246,13 @@ def extract_entities(text: str) -> dict:
             extracted = call_gemini(text, api_key)
         except Exception as exc:
             message = str(exc)
-            if "503" in message or "UNAVAILABLE" in message or "429" in message or "KeyboardInterrupt" in message:
+            if (
+                "503" in message
+                or "UNAVAILABLE" in message
+                or "429" in message
+                or "KeyboardInterrupt" in message
+                or is_transport_error(exc)
+            ):
                 print(f"  [Fallback] Gemini unavailable; using the fact-grounded offline extractor ({exc.__class__.__name__}).")
                 extracted = fallback_extract(text)
             else:

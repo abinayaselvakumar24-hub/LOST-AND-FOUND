@@ -71,7 +71,7 @@ python main.py
 
 ### What happens when you run it:
 1. Reads all 20 reports from `lost.csv` and 20 items from `found.csv`.
-2. With `GEMINI_API_KEY` set, sends each report to Gemini using `GEMINI_MODEL` or the default `gemini-3.5-flash-lite`. Without a key, or after persistent temporary Gemini `503`/`429` failures, it uses the built-in offline NLP fallback so the project can still finish.
+2. With `GEMINI_API_KEY` set, sends each report to Gemini using `GEMINI_MODEL` or the default `gemini-3.5-flash-lite`. Without a key, or when Gemini is unavailable due to `503`/`429` responses or an HTTP transport error, it uses the built-in offline NLP fallback so the project can still finish.
 3. Evaluates all pairs using the scoring system:
    - **+2 Points:** Same Colour
    - **+2 Points:** Same Brand

@@ -1,6 +1,6 @@
 ================================================================================
 RAILWAY STATION PASSENGER ASSISTANCE: LOST AND FOUND MATCHER SUMMARY
-Generated: 2026-11-23 13:56:58
+Generated: 2026-11-23 15:11:44
 ================================================================================
 
 1. EXECUTIVE METRICS
@@ -31,7 +31,7 @@ Found Articles Claimed by Multiple Passengers: 1
 #02 Lost L03 <--> Found F03
      Score: 5 (Likely) | Date Delta: 0 days
      Reasons: Same colour 'brown' (+2); Same brand 'Wildhorn' (+2); Same place 'waiting_hall' (+1)
-     Lost Summary : Brown Wildhorn leather wallet in waiting hall
+     Lost Summary : Brown Wildhorn wallet in waiting hall
      Found Summary: Brown Wildhorn wallet in waiting hall
 
 #03 Lost L04 <--> Found F04
@@ -74,7 +74,7 @@ Found Articles Claimed by Multiple Passengers: 1
      Score: 3 (Likely) | Date Delta: 1 days
      Reasons: Same colour 'blue' (+2); Same place 'platform_1' (+1)
      Lost Summary : Blue water bottle on platform 1
-     Found Summary: Blue Milton bottle on platform 1
+     Found Summary: Blue Milton Bottle at Platform 1
 
 #10 Lost L07 <--> Found F06
      Score: 3 (Likely) | Date Delta: 1 days
