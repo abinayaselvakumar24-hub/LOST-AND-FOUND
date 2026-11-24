@@ -1,6 +1,6 @@
 ================================================================================
 RAILWAY STATION PASSENGER ASSISTANCE: LOST AND FOUND MATCHER SUMMARY
-Generated: 2026-11-23 15:25:51
+Generated: 2026-11-24 13:18:11
 ================================================================================
 
 1. EXECUTIVE METRICS
@@ -18,7 +18,7 @@ Unclaimed Custody Articles   : 5
 Found Articles Claimed by Multiple Passengers: 1
 [!] ALERT: Found Item 'F01' has multiple competing claims:
     -> Lost ID: L01 | Score: 5 (Likely) | Reasons: Same colour 'black' (+2); Same brand 'Samsung' (+2); Same place 'waiting_hall' (+1) | Summary: Black Samsung phone near waiting hall
-    -> Lost ID: L08 | Score: 3 (Likely) | Reasons: Same colour 'black' (+2); Same place 'waiting_hall' (+1) | Summary: Black phone in waiting hall
+    -> Lost ID: L08 | Score: 3 (Likely) | Reasons: Same colour 'black' (+2); Same place 'waiting_hall' (+1) | Summary: Black phone missing from waiting hall
 
 3. TOP SUGGESTED MATCHES (SORTED BY HIGHEST CONFIDENCE)
 --------------------------------------------------------------------------------
@@ -26,25 +26,25 @@ Found Articles Claimed by Multiple Passengers: 1
      Score: 5 (Likely) | Date Delta: 0 days
      Reasons: Same colour 'black' (+2); Same brand 'Samsung' (+2); Same place 'waiting_hall' (+1)
      Lost Summary : Black Samsung phone near waiting hall
-     Found Summary: Black Samsung phone on waiting hall bench
+     Found Summary: Black Samsung Phone at Waiting Hall
 
 #02 Lost L03 <--> Found F03
      Score: 5 (Likely) | Date Delta: 0 days
      Reasons: Same colour 'brown' (+2); Same brand 'Wildhorn' (+2); Same place 'waiting_hall' (+1)
-     Lost Summary : Brown Wildhorn wallet in waiting hall
-     Found Summary: Brown Wildhorn Wallet at Waiting Hall
+     Lost Summary : Brown Wildhorn leather wallet in waiting hall
+     Found Summary: Brown Wildhorn wallet in waiting hall
 
 #03 Lost L04 <--> Found F04
      Score: 5 (Likely) | Date Delta: 1 days
      Reasons: Same colour 'black' (+2); Same brand 'Titan' (+2); Same place 'platform_2' (+1)
      Lost Summary : Black Titan watch near platform 2
-     Found Summary: Black Titan watch on platform 2
+     Found Summary: Black Titan watch on platform 2 waiting seat
 
 #04 Lost L10 <--> Found F08
      Score: 5 (Likely) | Date Delta: 1 days
      Reasons: Same colour 'blue' (+2); Same brand 'American Tourister' (+2); Same place 'platform_3' (+1)
      Lost Summary : Blue American Tourister bag on platform 3
-     Found Summary: Blue American Tourister bag on Platform 3
+     Found Summary: Blue American Tourister bag on platform 3
 
 #05 Lost L11 <--> Found F09
      Score: 5 (Likely) | Date Delta: 1 days
@@ -67,20 +67,20 @@ Found Articles Claimed by Multiple Passengers: 1
 #08 Lost L08 <--> Found F01 [DOUBLE CLAIM]
      Score: 3 (Likely) | Date Delta: 0 days
      Reasons: Same colour 'black' (+2); Same place 'waiting_hall' (+1)
-     Lost Summary : Black phone in waiting hall
-     Found Summary: Black Samsung phone on waiting hall bench
+     Lost Summary : Black phone missing from waiting hall
+     Found Summary: Black Samsung Phone at Waiting Hall
 
 #09 Lost L02 <--> Found F02
      Score: 3 (Likely) | Date Delta: 1 days
      Reasons: Same colour 'blue' (+2); Same place 'platform_1' (+1)
-     Lost Summary : Blue water bottle on platform_1
+     Lost Summary : Blue water bottle on platform 1
      Found Summary: Blue Milton Bottle at Platform 1
 
 #10 Lost L07 <--> Found F06
      Score: 3 (Likely) | Date Delta: 1 days
      Reasons: Same colour 'red' (+2); Same place 'foot_overbridge' (+1)
-     Lost Summary : Red Milton bottle at foot overbridge
-     Found Summary: Red bottle at foot overbridge staircase
+     Lost Summary : Red Milton water bottle at foot overbridge
+     Found Summary: Red bottle at foot overbridge
 
 4. HUMAN-IN-THE-LOOP VERIFICATION CHECKPOINT
 --------------------------------------------------------------------------------
